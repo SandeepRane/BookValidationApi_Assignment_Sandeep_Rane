@@ -20,6 +20,8 @@ namespace BookValidationApi_Assignment_Sandeep_Rane
 
             app.MapControllers();
 
+            app.MapGet("/", () => Results.Redirect("/books/valid"));
+
             app.Run();
         }
     }
